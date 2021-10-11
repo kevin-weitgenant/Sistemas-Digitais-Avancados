@@ -1,0 +1,16 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+
+entity DataPath is
+port(
+
+
+data_in : in std_logic_vector(0 to 31);
+clock : in std_logic;
+reset : in std_logic;
+c : in std_logic_vector(0 to 28);
+data_out : out std_logic_vector(0 to 31);
+cout,ov,N,Z : out std_logic);
+
+end DataPath;
